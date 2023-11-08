@@ -5,6 +5,7 @@ go 1.21
 toolchain go1.21.0
 
 replace (
+	github.com/alice/checkers => ../checkers-minimal/
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.7.0
@@ -22,6 +23,7 @@ require (
 	cosmossdk.io/math v1.2.0
 	cosmossdk.io/store v1.0.0
 	cosmossdk.io/tools/confix v0.1.0
+	github.com/alice/checkers v0.0.0-00010101000000-000000000000
 	github.com/cometbft/cometbft v0.38.0
 	github.com/cosmos/cosmos-db v1.0.0
 	github.com/cosmos/cosmos-sdk v0.50.1
